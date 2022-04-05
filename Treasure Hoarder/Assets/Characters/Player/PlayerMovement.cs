@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D body;
-    private Vector2 movement; 
+    public Vector2 movement; 
 
     private float moveLimiter = 0.7f;
 
@@ -43,9 +43,14 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         //shooting 
-        Vector2 lookDir = mousepos - body.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f * Time.deltaTime;
-        body.rotation = angle; 
+        Vector3 v = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        v -= transform.position;
+        v.z = 0;
+        transform.up = v;
+        
+        //Vector2 lookDir = mousepos - body.position;
+        //float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f * Time.deltaTime;
+        //body.rotation = angle; 
 
         if (movement.x != 0 && movement.y != 0) // Check for diagonal movement
         {
