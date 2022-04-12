@@ -53,19 +53,14 @@ public class ItemShopManagerScript : MonoBehaviour
     }
     public void Buy_SpeedBoost()
     {
-        GameMoney -= ItemShop[2, ButtonRef.GetComponent<ButtonInfo>().WeaponID];
-        ItemShop[3, ButtonRef.GetComponent<ButtonInfo>().WeaponID]++;
-        Players_Money.text = GameMoney.ToString();
-        ButtonRef.GetComponent<ButtonInfo>().Quantity.text = ItemShop[3, ButtonRef.GetComponent<ButtonInfo>().WeaponID].ToString();
-        player.runSpeed += .25f;
-    }
-    public void Buy_Power()
-    {
-
-    }
-
-    public void Buy_Player_Speed()
-    {
-
+        GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
+        if (GameMoney >= ItemShop[2, ButtonRef.GetComponent<ButtonInfo>().WeaponID])
+        {
+            GameMoney -= ItemShop[2, ButtonRef.GetComponent<ButtonInfo>().WeaponID];
+            ItemShop[3, ButtonRef.GetComponent<ButtonInfo>().WeaponID]++;
+            Players_Money.text = GameMoney.ToString();
+            ButtonRef.GetComponent<ButtonInfo>().Quantity.text = ItemShop[3, ButtonRef.GetComponent<ButtonInfo>().WeaponID].ToString();
+            player.runSpeed += .25f;
+        }
     }
 }
