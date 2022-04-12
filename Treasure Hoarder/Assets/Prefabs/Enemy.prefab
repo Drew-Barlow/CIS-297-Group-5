@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 6813322124233727423}
   - component: {fileID: 2005959476358223381}
   - component: {fileID: -525118209843590859}
+  - component: {fileID: 3244097476866986065}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1815569927
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 45966500872709769, guid: e4c03f8575d63a94ca981209812922bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -101,7 +102,7 @@ MonoBehaviour:
   rb: {fileID: 6813322124233727423}
   anim: {fileID: -525118209843590859}
   col: {fileID: 2005959476358223381}
-  player: {fileID: 4965904737392878246, guid: c03b84cb03cb10b4dada5e0268489d64, type: 3}
+  player: {fileID: 235033071584336595, guid: cc3a01123b35b6e47acc03a009ca4c01, type: 3}
   speed: 3
 --- !u!50 &6813322124233727423
 Rigidbody2D:
@@ -140,7 +141,7 @@ BoxCollider2D:
   m_Offset: {x: -0.10439396, y: -0.12811852}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.3361171, y: 0.3864611}
     oldSize: {x: 0.6875, y: 1.03125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -169,3 +170,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3244097476866986065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813322124233727411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88a3a63d85d2cf40b994a331ac9db16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  moneyDrop: {fileID: 3874893475736967578, guid: 39657c987deb4d7409c41b5f2b3e2fce, type: 3}
+  items:
+  - {fileID: 6081184100912679423, guid: ace1771f4754f9940bff5f2e166fb07e, type: 3}
+  - {fileID: 1447932675512853854, guid: 70ee1472609802445803b9cc30979986, type: 3}
