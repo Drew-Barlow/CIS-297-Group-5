@@ -5,12 +5,13 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     public float Health = 100;
-
+    public GameObject moneyDrop;
     public List<Transform> items = new List<Transform>();
 
     private void OnDestroy()
     {
         Destroy(gameObject);
+        Instantiate(moneyDrop, transform.position, Quaternion.identity);
         int randomNumber = Random.Range(0, 5);
         if (randomNumber == 3)
         {

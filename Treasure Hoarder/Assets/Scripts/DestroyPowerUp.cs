@@ -15,14 +15,15 @@ public class DestroyPowerUp : MonoBehaviour
 
     public void Pickup()
     {
-        GetComponent<SpriteRenderer>().enabled = false;
-        GetComponent<Collider2D>().enabled = false;
-        Destroy(gameObject);
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
             Destroy(enemy);
         }
+
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        Destroy(gameObject);
 
     }
 }
