@@ -10,12 +10,12 @@ public class EnemyStats : MonoBehaviour
 
     private void OnDestroy()
     {
-        Destroy(gameObject);
         Instantiate(moneyDrop, transform.position, Quaternion.identity);
         int randomNumber = Random.Range(0, 5);
         if (randomNumber == 3)
         {
             Instantiate(items[Random.Range(0, items.Count - 1)], transform.position, Quaternion.identity);
         }
+        Destroy(gameObject);
     }
 }
