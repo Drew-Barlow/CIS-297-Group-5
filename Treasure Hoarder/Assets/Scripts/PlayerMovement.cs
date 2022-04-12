@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float moveLimiter = 0.7f;
 
-    public float runSpeed = 20.0f;
+    public float runSpeed;
     private float timeStamp = 1f;
     public float cooldownperiod = 1f;
     private bool Dashing;
@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
                 Dashing = true;
                 timeStamp = Time.time + cooldownperiod;
             }
+            
         }
     }
 
