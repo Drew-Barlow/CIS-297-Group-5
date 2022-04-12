@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BasicMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    PlayerStats stats;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -24,7 +24,7 @@ public class BasicMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * stats.moveSpeed * Time.fixedDeltaTime);
 
     }
 }
