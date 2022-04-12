@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D body;
-    public Vector2 movement; 
+    public Vector2 movement;
+    public Animator animator;
 
     private float moveLimiter = 0.7f;
 
@@ -29,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
         // Gives a value between -1 and 1
         movement.x = Input.GetAxisRaw("Horizontal"); // -1 is left
         movement.y = Input.GetAxisRaw("Vertical"); // -1 is down
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
         if (timeStamp <= Time.time) //attach a cooldown timer for the dash 
         {
 
