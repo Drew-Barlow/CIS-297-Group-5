@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUp : MonoBehaviour
+public class SpeedPowerUp : MonoBehaviour
 {
     public float duration = 10;
     private void OnTriggerEnter2D(Collider2D collision)

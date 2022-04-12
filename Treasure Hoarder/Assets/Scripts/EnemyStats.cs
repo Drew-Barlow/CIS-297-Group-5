@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    public float moveSpeed = 2f;
     public float Health = 100;
-
-
-    private GameObject drop;
+    public GameObject drop;
 
 
     private void OnDestroy()
