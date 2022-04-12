@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5634668261276194856}
   - component: {fileID: 5634668261276194857}
   - component: {fileID: 5634668261276194863}
+  - component: {fileID: -5569975601484317862}
   m_Layer: 0
   m_Name: testCharacter
   m_TagString: Player
@@ -122,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {x: 0, y: 0}
+  animator: {fileID: -5569975601484317862}
   runSpeed: 5
   cooldownperiod: 1
   cam: {fileID: 0}
@@ -145,6 +147,25 @@ MonoBehaviour:
   bulletPrefab2: {fileID: 4230774157976845599, guid: dc5689cfc96453e43867451eaa371ff6, type: 3}
   bulletForce: 10
   player: {fileID: 5634668261276194857}
+--- !u!95 &-5569975601484317862
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5634668261276194852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce0ad61f2c68156449386ae47c0d88ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5634668262118681782
 GameObject:
   m_ObjectHideFlags: 0
