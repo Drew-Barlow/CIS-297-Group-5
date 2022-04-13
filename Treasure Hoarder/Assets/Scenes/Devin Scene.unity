@@ -236,6 +236,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1374677707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4965904737392878246, guid: c03b84cb03cb10b4dada5e0268489d64, type: 3}
+  m_PrefabInstance: {fileID: 4965904736683316599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1374677713
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374677707}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce0ad61f2c68156449386ae47c0d88ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1767211875
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ee9bae286316c45955fe5381297ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 6813322124233727411, guid: ee1f6c58cc395d54aa3296a9864790bb, type: 3}
+  enemy: {fileID: 6813322124233727411, guid: c604abec340f07940bb4af9afb35e311, type: 3}
   parent: {fileID: 899785814}
   localCamera: {fileID: 773275814}
 --- !u!1001 &4965904736683316599
@@ -337,6 +361,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 773275814}
+    - target: {fileID: 4965904737392878245, guid: c03b84cb03cb10b4dada5e0268489d64, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1374677713}
     - target: {fileID: 4965904737392878246, guid: c03b84cb03cb10b4dada5e0268489d64, type: 3}
       propertyPath: m_Name
       value: FakePlayer

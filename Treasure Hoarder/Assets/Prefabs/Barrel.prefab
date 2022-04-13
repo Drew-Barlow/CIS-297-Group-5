@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2005959476358223381}
   - component: {fileID: -525118209843590859}
   - component: {fileID: 3244097476866986065}
-  - component: {fileID: 6247867987958119161}
+  - component: {fileID: 3394613285424033596}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Barrel
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 1815569927
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 45966500872709769, guid: e4c03f8575d63a94ca981209812922bb, type: 3}
+  m_Sprite: {fileID: 6084859605308855041, guid: 967b9a410c8ef814d83bb934930b593a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,18 +121,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.023817062, y: -0.009172201}
+  m_Offset: {x: 0.00028324127, y: 0.33856392}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.3361171, y: 0.3864611}
-    oldSize: {x: 0.6875, y: 1.03125}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.6363636, y: 0.6818182}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.352026, y: 0.781724}
+  m_Size: {x: 0.6274605, y: 0.6784358}
   m_EdgeRadius: 0
 --- !u!95 &-525118209843590859
 Animator:
@@ -144,7 +144,7 @@ Animator:
   m_GameObject: {fileID: 6813322124233727411}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 89500d8bd365a2448a50e738102feae9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 083882e08b1e45b4d98a4c1355d36de3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   items:
   - {fileID: 6081184100912679423, guid: ace1771f4754f9940bff5f2e166fb07e, type: 3}
   - {fileID: 1447932675512853854, guid: 70ee1472609802445803b9cc30979986, type: 3}
---- !u!114 &6247867987958119161
+--- !u!114 &3394613285424033596
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,11 +179,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6813322124233727411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 485da6413c55972458e087885cf9cf0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 596eb22a93c0b7246a336262148ba530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6813322124233727423}
   anim: {fileID: -525118209843590859}
   col: {fileID: 2005959476358223381}
   player: {fileID: 0}
-  speed: 4
+  speed: 6
