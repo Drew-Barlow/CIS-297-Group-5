@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ee9bae286316c45955fe5381297ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 6813322124233727411, guid: c604abec340f07940bb4af9afb35e311, type: 3}
+  enemy: {fileID: 6813322124233727411, guid: e8264638b29b6994ca456bfdbdc98551, type: 3}
   parent: {fileID: 899785814}
   localCamera: {fileID: 773275814}
 --- !u!1001 &4965904736683316599
