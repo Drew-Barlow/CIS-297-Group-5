@@ -186,8 +186,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 609a625d3e899b84ebf276b097bc4e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 100
+  maxHealth: 100
   Tabloons: 0
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  immuned: 0
+  immunityCooldown: 1
+  startimmunityCooldown: 1
 --- !u!114 &8586423693591355801
 MonoBehaviour:
   m_ObjectHideFlags: 0

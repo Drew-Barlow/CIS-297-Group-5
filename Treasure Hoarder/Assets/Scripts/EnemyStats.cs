@@ -7,7 +7,13 @@ public class EnemyStats : MonoBehaviour
     public float Health = 100;
     public GameObject moneyDrop;
     public List<Transform> items = new List<Transform>();
-
+    public void Update()
+    {
+        if (Health == 0)
+        {
+            OnDestroy(); 
+        }
+    }
     private void OnDestroy()
     {
         Instantiate(moneyDrop, transform.position, Quaternion.identity);
@@ -17,5 +23,18 @@ public class EnemyStats : MonoBehaviour
             Instantiate(items[Random.Range(0, items.Count - 1)], transform.position, Quaternion.identity);
         }
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Bullet")//or tag
+        {
+            TakeDamage(20); 
+        }
+    }
+
+    void TakeDamage(int damage)
+    {
+        Health -= damage; 
     }
 }

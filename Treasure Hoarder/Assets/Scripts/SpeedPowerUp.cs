@@ -15,12 +15,12 @@ public class SpeedPowerUp : MonoBehaviour
 
     private IEnumerator Pickup(Collider2D player)
     {
-        BasicMovement speed = player.GetComponent<BasicMovement>();
-        speed.moveSpeed += 3;
+        PlayerMovement speed = player.GetComponent<PlayerMovement>();
+        speed.runSpeed += 3;
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
         yield return new WaitForSeconds(duration);
-        speed.moveSpeed -= 3;
+        speed.runSpeed -= 3;
         Destroy(gameObject);
     }
 }
