@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private float timeStamp = 1f;
     public float cooldownperiod = 1f;
     private bool Dashing;
+    
 
 
     //shooting variables 
