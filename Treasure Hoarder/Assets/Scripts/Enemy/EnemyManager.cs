@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    public GameObject enemy;
+    public GameObject skeleton;
+    public GameObject barrel;
+    public GameObject thief;
     public GameObject parent;
     public Camera localCamera;
 
@@ -19,12 +21,24 @@ public class EnemyManager : MonoBehaviour
     void Update()
     {
         position = localCamera.ScreenToWorldPoint((new Vector3(Random.Range(0, localCamera.scaledPixelWidth), localCamera.scaledPixelHeight, 0)));
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             //Debug.Log(position);
-            Instantiate(enemy, position, Quaternion.identity, parent.transform);
+            Instantiate(skeleton, position, Quaternion.identity, parent.transform);
         }
 
-        
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            //Debug.Log(position);
+            Instantiate(barrel, position, Quaternion.identity, parent.transform);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            //Debug.Log(position);
+            Instantiate(thief, position, Quaternion.identity, parent.transform);
+        }
+
+
     }
 }
