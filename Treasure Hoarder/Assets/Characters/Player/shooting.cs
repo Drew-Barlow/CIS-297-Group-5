@@ -15,7 +15,8 @@ public class shooting : MonoBehaviour
 
 
     private bool pistol = true;
-    private bool shotgun = false; 
+    
+    public bool shotgun = false; 
     // Update is called once per frame
     void Update()
     {
