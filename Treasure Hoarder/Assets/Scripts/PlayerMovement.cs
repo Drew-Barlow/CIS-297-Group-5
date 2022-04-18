@@ -8,13 +8,16 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 movement;
     public Animator animator;
 
+    //Screen Bounds Object
+    public ScreenBounds screenBounds;
+
+
     private float moveLimiter = 0.7f;
 
     public float runSpeed;
     private float timeStamp = 1f;
     public float cooldownperiod = 1f;
     private bool Dashing;
-    
 
 
     //shooting variables 
@@ -27,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //Screen Bounds attributes to allow for screen wrapping and boundries for the player
+
         mousepos = cam.ScreenToWorldPoint(Input.mousePosition); 
         // Gives a value between -1 and 1
         movement.x = Input.GetAxisRaw("Horizontal"); // -1 is left
