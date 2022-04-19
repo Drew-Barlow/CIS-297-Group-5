@@ -5,9 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public void ResumeGame()
+    bool paused = false;
+    public void PausedGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (Input.GetKeyDown("escape"))
+        {
+            if (paused == true){
+                Time.timeScale = 1.0f;
+                Cursor.visible = false;
+                Screen.lockCursor = true;
+                paused = false;
+            }
+            else
+            {
+                Time.timeScale = 0.0f;
+                Cursor.visible = true;
+                Screen.lockCursor = false;
+                paused = true;
+            }
+        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void QuitGame()
