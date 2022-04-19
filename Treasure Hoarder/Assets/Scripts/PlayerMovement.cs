@@ -53,15 +53,24 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        //shooting 
-        Vector3 v = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        v -= transform.position;
-        v.z = 0;
-        transform.up = v;
-        
+        //shooting
+        Vector3 p = cam.ScreenToWorldPoint(Input.mousePosition) - gameObject.transform.position;
+        Debug.Log(p); 
+        if(p.x < 0)
+        {
+            animator.Play("Player_Walk_Left"); 
+        }else if(p.x > 0)
+        {
+            animator.Play("Player_Walk_Right");
+        }
+        // Vector3 v = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // v -= transform.position;
+        // v.z = 0;
+        //transform.up = v;
+
         //Vector2 lookDir = mousepos - body.position;
         //float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f * Time.deltaTime;
-        //body.rotation = angle; 
+        //body.rotation = angle;
 
         if (movement.x != 0 && movement.y != 0) // Check for diagonal movement
         {

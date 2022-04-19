@@ -171,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {x: 0, y: 0}
   animator: {fileID: 235033072081224713}
+  screenBounds: {fileID: 0}
   runSpeed: 2
   cooldownperiod: 1
   cam: {fileID: 0}
@@ -213,6 +214,7 @@ MonoBehaviour:
   bulletPrefab2: {fileID: 4230774157976845599, guid: dc5689cfc96453e43867451eaa371ff6, type: 3}
   bulletForce: 10
   player: {fileID: 0}
+  shotgun: 0
 --- !u!1 &2268552416787368532
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8794683928974366211}
+  - component: {fileID: 6931823233165996857}
   m_Layer: 0
   m_Name: Firepoint (shotgun)(2)
   m_TagString: Untagged
@@ -276,6 +279,18 @@ Transform:
   m_Father: {fileID: 8895905740972959670}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6931823233165996857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7688092580170740905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a439132ab726b408e65488cc06f78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9005174458872330015
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2931683493449282613}
+  - component: {fileID: 2679923539893105647}
   m_Layer: 0
   m_Name: Firepoint (pistol)
   m_TagString: Untagged
@@ -306,6 +322,18 @@ Transform:
   m_Father: {fileID: 8895905740972959670}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2679923539893105647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005174458872330015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a439132ab726b408e65488cc06f78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9140690665327425776
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6852680135817740684}
+  - component: {fileID: 8241030446294040267}
   m_Layer: 0
   m_Name: Firepoint (shotgun) (1)
   m_TagString: Untagged
@@ -336,3 +365,15 @@ Transform:
   m_Father: {fileID: 8895905740972959670}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8241030446294040267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140690665327425776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a439132ab726b408e65488cc06f78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
