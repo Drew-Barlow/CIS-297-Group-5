@@ -118634,6 +118634,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1884938880}
+    - target: {fileID: 2679923539893105647, guid: cc3a01123b35b6e47acc03a009ca4c01, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1749710867}
     - target: {fileID: 4967239449802449623, guid: cc3a01123b35b6e47acc03a009ca4c01, type: 3}
       propertyPath: cam
       value: 
@@ -118646,6 +118650,14 @@ PrefabInstance:
       propertyPath: screenBounds
       value: 
       objectReference: {fileID: 1193789445}
+    - target: {fileID: 6931823233165996857, guid: cc3a01123b35b6e47acc03a009ca4c01, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1749710867}
+    - target: {fileID: 8241030446294040267, guid: cc3a01123b35b6e47acc03a009ca4c01, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1749710867}
     - target: {fileID: 8586423693591355801, guid: cc3a01123b35b6e47acc03a009ca4c01, type: 3}
       propertyPath: player
       value: 
