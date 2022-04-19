@@ -7,6 +7,7 @@ public class EnemyManager : MonoBehaviour
     public GameObject skeleton;
     public GameObject barrel;
     public GameObject thief;
+    public GameObject bringer;
     public GameObject parent;
     public Camera localCamera;
 
@@ -20,7 +21,7 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
-        position = localCamera.ScreenToWorldPoint((new Vector3(Random.Range(0, localCamera.scaledPixelWidth), localCamera.scaledPixelHeight, 0)));
+        position = localCamera.ScreenToWorldPoint((new Vector3(Random.Range(0, localCamera.scaledPixelWidth), localCamera.scaledPixelHeight, 100)));
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             //Debug.Log(position);
@@ -39,6 +40,10 @@ public class EnemyManager : MonoBehaviour
             Instantiate(thief, position, Quaternion.identity, parent.transform);
         }
 
-
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            //Debug.Log(position);
+            Instantiate(bringer, position, Quaternion.identity, parent.transform);
+        }
     }
 }

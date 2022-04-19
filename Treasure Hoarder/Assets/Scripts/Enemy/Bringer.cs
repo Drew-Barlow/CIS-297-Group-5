@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Barrel : MonoBehaviour
+public class Bringer : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Animator anim;
@@ -23,31 +23,29 @@ public class Barrel : MonoBehaviour
     void Update()
     {
         //Debug.Log(gameObject.transform.position);
-        if (col.IsTouching(colPlayer))
+        if (col.IsTouching(colPlayer) && !attacking)
         {
             attacking = true;
 
             rb.velocity = new Vector2(0, 0);
-            anim.Play("Barrel Idle");
+            anim.Play("Bringer_Attacking");
 
             //anim.SetBool("Contact", true);
         }
 
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Barrel Walking"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Dead"))
         {
-            attacking = false;
-            //anim.SetBool("Contact", false);
+            Destroy(gameObject);
         }
 
     }
 
     private void FixedUpdate()
     {
-        Debug.Log(((player.transform.position - gameObject.transform.position).normalized * speed * Time.fixedDeltaTime));
         if (attacking == false)
         {
             gameObject.transform.position = gameObject.transform.position + ((player.transform.position - gameObject.transform.position).normalized * speed * Time.fixedDeltaTime);
-            if ((gameObject.transform.position - player.transform.position).x > 0)
+            if ((gameObject.transform.position - player.transform.position).x < 0)
             {
                 gameObject.transform.localRotation = Quaternion.Euler(0, 180, 0);
             }
