@@ -9,6 +9,7 @@ public class Coin : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Pickup(collision);
+            FindObjectOfType<AudioManager>().Play("Coin Collect");
         }
     }
 

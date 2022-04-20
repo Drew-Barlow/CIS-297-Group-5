@@ -10,6 +10,7 @@ public class DestroyPowerUp : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
            Pickup();
+           FindObjectOfType<AudioManager>().Play("Kill Boost");
         }
     }
 

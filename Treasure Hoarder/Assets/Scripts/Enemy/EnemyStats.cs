@@ -7,6 +7,7 @@ public class EnemyStats : MonoBehaviour
     public float Health = 100;
     public GameObject moneyDrop;
     public List<Transform> items = new List<Transform>();
+
     public void Update()
     {
         if (Health == 0)
@@ -29,7 +30,8 @@ public class EnemyStats : MonoBehaviour
     {
         if (collision.tag == "Bullet")//or tag
         {
-            TakeDamage(20); 
+            TakeDamage(20);
+            FindObjectOfType<AudioManager>().Play("Enemy Hit");
         }
     }
 

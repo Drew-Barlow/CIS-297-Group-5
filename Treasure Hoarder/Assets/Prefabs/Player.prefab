@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 2931683493449282613}
   - component: {fileID: 2679923539893105647}
   - component: {fileID: 5995854018274859407}
+  - component: {fileID: 4550891695195915843}
   m_Layer: 0
   m_Name: Firepoint (pistol)
   m_TagString: Untagged
@@ -388,6 +389,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4550891695195915843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005174458872330015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9b54658428eeb47bd594f759211e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9140690665327425776
 GameObject:
   m_ObjectHideFlags: 0

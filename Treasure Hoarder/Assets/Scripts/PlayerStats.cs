@@ -46,6 +46,7 @@ public class PlayerStats : MonoBehaviour
         {
             TakeDamage(5);
             immuned = true;
+            FindObjectOfType<AudioManager>().Play("Player Hit");
         }
     }
     

@@ -10,6 +10,7 @@ public class SpeedPowerUp : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             StartCoroutine(Pickup(collision));
+            FindObjectOfType<AudioManager>().Play("Speed Boost");
         }
     }
 

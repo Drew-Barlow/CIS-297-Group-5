@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Skeleton : MonoBehaviour
 {
-
     public Rigidbody2D rb;
     public Animator anim;
     public Collider2D col;
@@ -27,10 +26,10 @@ public class Skeleton : MonoBehaviour
         if (col.IsTouching(colPlayer))
         {
             attacking = true;
-
             rb.velocity = new Vector2(0, 0);
             anim.Play("Skeleton_Attacking");
-            
+            FindObjectOfType<AudioManager>().Play("Enemy Swing");
+
             //anim.SetBool("Contact", true);
         }
         
