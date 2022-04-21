@@ -5,15 +5,15 @@ using UnityEngine;
 public class shop : MonoBehaviour
 {
     [SerializeField] private GameObject shopUI;
-    [SerializeField] private bool isShopping = true;
+    [SerializeField] private bool isShopping;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (isShopping == false)
+            if (isShopping)
             {
-                notShopping();
+                Resume();
             }
             else
             {
@@ -27,17 +27,16 @@ public class shop : MonoBehaviour
         isShopping = true;
         Debug.Log("Pause");
         shopUI.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
 
     }
 
-    public void notShopping()
+    public void Resume()
     {
         isShopping = false;
         shopUI.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
 
         Debug.Log("resume");
     }
-
 }
