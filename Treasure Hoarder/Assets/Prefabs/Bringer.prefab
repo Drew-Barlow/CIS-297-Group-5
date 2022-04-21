@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a88a3a63d85d2cf40b994a331ac9db16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 100
+  Health: 10000
   moneyDrop: {fileID: 3874893475736967578, guid: 39657c987deb4d7409c41b5f2b3e2fce, type: 3}
   items:
   - {fileID: 6081184100912679423, guid: ace1771f4754f9940bff5f2e166fb07e, type: 3}

@@ -7,6 +7,7 @@ public class EnemyStats : MonoBehaviour
     public float Health = 100;
     public GameObject moneyDrop;
     public List<Transform> items = new List<Transform>();
+    public float Damage = 5;
 
     public void Update()
     {
@@ -18,8 +19,8 @@ public class EnemyStats : MonoBehaviour
     private void OnDestroy()
     {
         Instantiate(moneyDrop, transform.position, Quaternion.identity);
-        int randomNumber = Random.Range(0, 5);
-        if (randomNumber == 3)
+        int randomNumber = Random.Range(0, 30);
+        if (randomNumber == 13)
         {
             Instantiate(items[Random.Range(0, items.Count - 1)], transform.position, Quaternion.identity);
         }
