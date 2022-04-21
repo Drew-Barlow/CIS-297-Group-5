@@ -910,9 +910,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5659645466461285496}
+      - m_Target: {fileID: 24100000, guid: 0037c2bebe8cce743ab982d4fe11108b, type: 2}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: ChangeVolume
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -935,6 +935,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 5659645466461285497}
+  AudioMixer: {fileID: 24100000, guid: 0037c2bebe8cce743ab982d4fe11108b, type: 2}
+  masterVolume: Master
 --- !u!1 &5659645466505950374
 GameObject:
   m_ObjectHideFlags: 0
