@@ -170,6 +170,7 @@ MonoBehaviour:
   items:
   - {fileID: 6081184100912679423, guid: ace1771f4754f9940bff5f2e166fb07e, type: 3}
   - {fileID: 1447932675512853854, guid: 70ee1472609802445803b9cc30979986, type: 3}
+  Damage: 5
 --- !u!114 &273150008915589026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,4 +187,4 @@ MonoBehaviour:
   anim: {fileID: -525118209843590859}
   col: {fileID: 2005959476358223381}
   player: {fileID: 0}
-  speed: 10
+  speed: 11
