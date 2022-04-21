@@ -49,28 +49,28 @@ public class PlayerStats : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Enemy" && !immuned)
+        if (collision.gameObject.name == "Enemy(Clone)" && !immuned)
         {
             TakeDamage(5);
             immuned = true;
             FindObjectOfType<AudioManager>().Play("Player Hit");
         }
 
-        if (collision.gameObject.name == "Thief" && !immuned)
+        if (collision.gameObject.name == "Thief(Clone)" && !immuned)
         {
             TakeDamage(10);
             immuned = true;
             FindObjectOfType<AudioManager>().Play("Player Hit");
         }
 
-        if (collision.gameObject.name == "Barrel" && !immuned)
+        if (collision.gameObject.name == "Barrel(Clone)" && !immuned)
         {
             TakeDamage(15);
             immuned = true;
             FindObjectOfType<AudioManager>().Play("Player Hit");
         }
 
-        if (collision.gameObject.name == "Bringer" && !immuned)
+        if (collision.gameObject.name == "Bringer(Clone)" && !immuned)
         {
             TakeDamage(100);
             immuned = true;
