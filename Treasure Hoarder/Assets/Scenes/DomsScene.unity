@@ -123571,6 +123571,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 9dcd5a7ae6dfbb74d9ce40dd6d326f10, type: 3}
     volume: 1
     source: {fileID: 0}
+  audioMixerGroup: {fileID: 24300002, guid: 0037c2bebe8cce743ab982d4fe11108b, type: 2}
 --- !u!4 &1912014009
 Transform:
   m_ObjectHideFlags: 0
