@@ -112,23 +112,23 @@ public class EnemyManager : MonoBehaviour
         //    Instantiate(bringer, position, Quaternion.identity, parent.transform);
         //}
 
-        //if (Input.GetKeyDown(KeyCode.Alpha5))
-        //{
-        //    //Debug.Log(position);
-        //    times += 10f;
-        //}
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            //Debug.Log(position);
+            times += 10f;
+        }
 
-        //if (Input.GetKeyDown(KeyCode.Alpha6))
-        //{
-        //    //Debug.Log(position);
-        //    times += 60f;
-        //}
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            //Debug.Log(position);
+            times += 60f;
+        }
 
-        //if (Input.GetKeyDown(KeyCode.Alpha7))
-        //{
-        //    //Debug.Log(position);
-        //    times += 835f;
-        //}
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            //Debug.Log(position);
+            times += 835f;
+        }
 
         //if (Input.GetKeyDown(KeyCode.O))
         //{
