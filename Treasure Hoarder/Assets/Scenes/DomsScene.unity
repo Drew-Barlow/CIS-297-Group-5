@@ -123505,86 +123505,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1912014007
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1912014009}
-  - component: {fileID: 1912014008}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1912014008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912014007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea5ed49e478b0da4e8b83fa352da9452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Pistol Attack
-    clip: {fileID: 8300000, guid: da376e5fa5e39754290bdfa3b75cb905, type: 3}
-    volume: 1
-    source: {fileID: 0}
-  - name: Shotgun Attack
-    clip: {fileID: 8300000, guid: dd989bdb0d61cdd4daa5362542fcaafd, type: 3}
-    volume: 1
-    source: {fileID: 0}
-  - name: Player Hit
-    clip: {fileID: 8300000, guid: 4d5901b6e9dbb1a4ebe716c12048ac3d, type: 3}
-    volume: 1
-    source: {fileID: 0}
-  - name: Player Death
-    clip: {fileID: 8300000, guid: 3df2d27254bf06c449ace591979ad562, type: 3}
-    volume: 1
-    source: {fileID: 0}
-  - name: Enemy Swing
-    clip: {fileID: 8300000, guid: 3fee819523681124f80627dbe6469352, type: 3}
-    volume: 1
-    source: {fileID: 0}
-  - name: Enemy Hit
-    clip: {fileID: 8300000, guid: 672284135714ea2479232468c537397a, type: 3}
-    volume: 1
-    source: {fileID: 0}
-  - name: Speed Boost
-    clip: {fileID: 8300000, guid: ee9bb54bd27e021469d62f816d069a87, type: 3}
-    volume: 1
-    source: {fileID: 0}
-  - name: Kill Boost
-    clip: {fileID: 8300000, guid: 8c79ca158fb38f8408cf227e8f668d11, type: 3}
-    volume: 1
-    source: {fileID: 0}
-  - name: Coin Collect
-    clip: {fileID: 8300000, guid: 9dcd5a7ae6dfbb74d9ce40dd6d326f10, type: 3}
-    volume: 1
-    source: {fileID: 0}
---- !u!4 &1912014009
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912014007}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7560666, y: -1.2006084, z: -0.85449153}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1934774396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146692,6 +146612,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3110a334fba32347b6ec6da1d74b329, type: 3}
+--- !u!1001 &2555353157246799356
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.7560666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2006084
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.85449153
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629765, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555353156429629771, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1377c7737c08224468d8d3ff480dc5d8, type: 3}
 --- !u!1001 &3727041224411622616
 PrefabInstance:
   m_ObjectHideFlags: 0

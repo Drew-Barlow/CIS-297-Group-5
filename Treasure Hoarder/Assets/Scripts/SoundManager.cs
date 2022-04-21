@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
+    public AudioMixer AudioMixer;
+    public string masterVolume;
 
     void Start()
     {
@@ -21,10 +24,10 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void ChangeVolume()
+    public void ChangeVolume(float value)
     {
-        AudioListener.volume = volumeSlider.value;
-        Save();
+        AudioMixer.SetFloat(masterVolume,Mathf.Log(volumeSlider.value*20f));
+        //Save();
     }
 
     private void Load()
