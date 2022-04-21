@@ -5,39 +5,39 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuUI;
-    [SerializeField] private bool isPauased;
+    [SerializeField] private bool isPaused;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            isPauased = !isPauased;
-        }
-
-        if (isPauased)
-        {
-            Paused();
-        }
-
-        else
-        {
-            Resume();
+            if (isPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Paused();
+            }
         }
     }
 
     void Paused()
     {
-        Time.timeScale = 0;
-        AudioListener.pause = true;
+       isPaused = true;
+        Debug.Log("Pause");
         pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+
     }
 
     public void Resume()
     {
-        Time.timeScale = 1;
-        AudioListener.pause = false;
+        isPaused = false;
         pauseMenuUI.SetActive(false);
-        isPauased = false;
+        Time.timeScale = 1f;
+
+        Debug.Log("resume");
     }
 
     public void QuitGame()
