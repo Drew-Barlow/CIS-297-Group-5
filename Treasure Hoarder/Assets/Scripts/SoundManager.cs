@@ -8,7 +8,7 @@ public class SoundManager : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
     public AudioMixer AudioMixer;
-    public string masterVolume;
+    public string volumeName;
 
     void Start()
     {
@@ -24,9 +24,9 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    public void ChangeVolume(float value)
+    public void UpdateValueOnChange(float value)
     {
-        AudioMixer.SetFloat(masterVolume,Mathf.Log(volumeSlider.value*20f));
+        AudioMixer.SetFloat(volumeName, Mathf.Log(value * 20f));
         //Save();
     }
 
