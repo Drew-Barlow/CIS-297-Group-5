@@ -10,10 +10,10 @@ public class PlayerStats : MonoBehaviour
     
     public float currentHealth; 
     public HealthBar healthBar;
-    
     public bool immuned;
     public float immunityCooldown;
     public float startimmunityCooldown;
+    public EnemyStats enemyStats;
 
     // Start is called before the first frame update
     void Start()
@@ -49,9 +49,30 @@ public class PlayerStats : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") && !immuned)
+        if (collision.gameObject.name == "Enemy" && !immuned)
         {
             TakeDamage(5);
+            immuned = true;
+            FindObjectOfType<AudioManager>().Play("Player Hit");
+        }
+
+        if (collision.gameObject.name == "Thief" && !immuned)
+        {
+            TakeDamage(10);
+            immuned = true;
+            FindObjectOfType<AudioManager>().Play("Player Hit");
+        }
+
+        if (collision.gameObject.name == "Barrel" && !immuned)
+        {
+            TakeDamage(15);
+            immuned = true;
+            FindObjectOfType<AudioManager>().Play("Player Hit");
+        }
+
+        if (collision.gameObject.name == "Bringer" && !immuned)
+        {
+            TakeDamage(100);
             immuned = true;
             FindObjectOfType<AudioManager>().Play("Player Hit");
         }
