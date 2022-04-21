@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -34,6 +35,12 @@ public class PlayerStats : MonoBehaviour
             immuned = false;
             immunityCooldown = startimmunityCooldown;
         }
+
+        if (currentHealth <= 0)
+        {
+            Death();
+        }
+
     }
     void ImmunityCooldown()
     {
@@ -55,6 +62,11 @@ public class PlayerStats : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+    }
+
+    void Death()
+    {
+        SceneManager.LoadScene(2);
     }
 }
 

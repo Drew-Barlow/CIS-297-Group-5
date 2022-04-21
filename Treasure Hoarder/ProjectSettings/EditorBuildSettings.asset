@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kirk Scene.unity
     guid: 657686fb9a5a29c49abf086e31792088
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: a6d874e8e715135408566f7b2c89ce70
   m_configObjects: {}
