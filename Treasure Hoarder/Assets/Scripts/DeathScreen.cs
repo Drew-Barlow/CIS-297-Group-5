@@ -7,6 +7,6 @@ public class DeathScreen : MonoBehaviour
 {
    public void MainMenuButton()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene(0);
     }
 }
