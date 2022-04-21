@@ -88,66 +88,66 @@ public class EnemyManager : MonoBehaviour
             StartCoroutine(spawn());
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            //Debug.Log(position);
-            Instantiate(skeleton, position, Quaternion.identity, parent.transform);
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //{
+        //    //Debug.Log(position);
+        //    Instantiate(skeleton, position, Quaternion.identity, parent.transform);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            //Debug.Log(position);
-            Instantiate(barrel, position, Quaternion.identity, parent.transform);
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha2))
+        //{
+        //    //Debug.Log(position);
+        //    Instantiate(barrel, position, Quaternion.identity, parent.transform);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            //Debug.Log(position);
-            Instantiate(thief, position, Quaternion.identity, parent.transform);
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha3))
+        //{
+        //    //Debug.Log(position);
+        //    Instantiate(thief, position, Quaternion.identity, parent.transform);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            //Debug.Log(position);
-            Instantiate(bringer, position, Quaternion.identity, parent.transform);
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha4))
+        //{
+        //    //Debug.Log(position);
+        //    Instantiate(bringer, position, Quaternion.identity, parent.transform);
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            //Debug.Log(position);
-            times += 10f;
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha5))
+        //{
+        //    //Debug.Log(position);
+        //    times += 10f;
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            //Debug.Log(position);
-            times += 60f;
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha6))
+        //{
+        //    //Debug.Log(position);
+        //    times += 60f;
+        //}
 
-        if (Input.GetKeyDown(KeyCode.Alpha7))
-        {
-            //Debug.Log(position);
-            times += 835f;
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha7))
+        //{
+        //    //Debug.Log(position);
+        //    times += 835f;
+        //}
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            foreach (GameObject enemy in enemies)
-            {
-                Destroy(enemy);
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.O))
+        //{
+        //    GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        //    foreach (GameObject enemy in enemies)
+        //    {
+        //        Destroy(enemy);
+        //    }
+        //}
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            GameObject[] items = GameObject.FindGameObjectsWithTag("Item");
-            foreach (GameObject item in items)
-            {
-                Debug.LogError("Item Destroyed");
-                Destroy(item);
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    GameObject[] items = GameObject.FindGameObjectsWithTag("Item");
+        //    foreach (GameObject item in items)
+        //    {
+        //        Debug.LogError("Item Destroyed");
+        //        Destroy(item);
+        //    }
+        //}
 
     }
 
